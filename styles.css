@@ -1,0 +1,135 @@
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5rem;
+}
+
+header > img {
+    width: 15rem;
+}
+
+main {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+}
+
+.main-pic {
+    width: 100%;
+}
+
+main > section {
+    color: white;
+}
+
+section > h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;   
+    text-align: center;    
+}
+
+section > p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    color: rgb(218, 211, 211);
+    margin: 5% 0;
+    text-align: center;
+}
+
+section > button {
+    display: block;
+    margin: 5rem auto 0 auto;
+    background-color: white;
+    border: none;
+    width: 20rem;
+    height: 4rem;
+    border-radius: 3rem;
+    box-shadow: 1px 1px 10px rgb(99, 83, 83);
+}
+
+
+footer {
+    margin-top: 7rem;
+}
+
+footer > div {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+}
+
+.social-icons {
+    display: block;
+    width: 2.5rem;
+    color: white;
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+
+    body {
+        background-image: url(images/bg-desktop.svg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    header {
+        margin: auto;
+        max-width: 1400px;
+    }
+
+    main {
+        flex-direction: row;
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main > div, main > section {
+        flex-basis: 50%;
+    }
+
+    section {
+        padding: 5rem;
+    }
+
+    section > h1 {
+        font-size: 4rem;
+        text-align: left;
+    }
+
+    section > button {
+        margin: 5rem 0 0 0;
+    }
+
+    section > p {
+        text-align: left;
+    }
+
+    footer > div {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: end;
+        padding: 5rem;
+    }
+}
